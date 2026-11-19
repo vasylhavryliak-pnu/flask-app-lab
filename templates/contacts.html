@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Контакти</h1>
+
+<div class="row">
+    <div class="col-md-5 mb-4">
+        <section class="resume-section h-100">
+            <h2>Зв'язатися зі мною</h2>
+            <p>Якщо у вас є запитання чи пропозиції щодо співпраці, скористайтеся контактами нижче або заповніть форму:</p>
+            <ul class="list-unstyled">
+                <li class="mb-2"><strong>Email:</strong> vasyl.havryliak24@pnu.edu.ua</li>
+                <li class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/vasylhavryliak-pnu" target="_blank">github.com/vasylhavryliak-pnu</a></li>
+                <li class="mb-2"><strong>Місто:</strong> Івано-Франківськ, Україна</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="col-md-7 mb-4">
+        <section class="resume-section">
+            <h2>Надіслати повідомлення</h2>
+            <form action="#" method="post" onsubmit="alert('Повідомлення надіслано!'); return false;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше ім'я</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Введіть ім'я" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Електронна пошта</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Повідомлення</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Текст вашого повідомлення..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Відправити</button>
+            </form>
+        </section>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row align-items-center mb-4">
+    <div class="col-md-3 text-center mb-3 mb-md-0">
+        <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="Фото профілю" class="profile-img img-fluid rounded-circle shadow-sm">
+    </div>
+    <div class="col-md-9">
+        <h1 class="display-6 fw-bold">Василь Гавриляк</h1>
+        <p class="lead text-muted mb-0">Студент спеціальності ІПЗ</p>
+    </div>
+</div>
+
+<section class="resume-section mb-4">
+    <h2>Про себе</h2>
+    <p>Цілеспрямований студент, захоплююся вебпрограмуванням, мережевими технологіями та розробкою програмного забезпечення. Шукаю можливості для практичного застосування знань у реальних вебпроєктах.</p>
+</section>
+
+<section class="resume-section mb-4">
+    <h2>Освіта</h2>
+    <ul class="list-unstyled mb-0">
+        <li><strong>Карпатський національний університет імені Василя Стефаника</strong></li>
+        <li class="text-muted">Бакалавр з інженерії програмного забезпечення</li>
+    </ul>
+</section>
+
+<section class="resume-section mb-4">
+    <h2>Навички</h2>
+    <ul>
+        <li>Розробка вебдодатків та робота з серверною логікою</li>
+        <li>Робота з системами контролю версій (Git, GitHub)</li>
+        <li>Налаштування локальних та хмарних середовищ розгортання</li>
+        <li>Базове адміністрування мереж та операційних систем</li>
+    </ul>
+</section>
+
+<section class="resume-section mb-4">
+    <h2>Технології</h2>
+    <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-primary fs-6">Python</span>
+        <span class="badge bg-dark fs-6">Flask</span>
+        <span class="badge bg-secondary fs-6">HTML5 / CSS3</span>
+        <span class="badge bg-info text-dark fs-6">Bootstrap 5</span>
+        <span class="badge bg-success fs-6">Git / GitHub</span>
+        <span class="badge bg-warning text-dark fs-6">C++ / JavaScript</span>
+    </div>
+</section>
+
+<section class="resume-section mb-4">
+    <h2>Досвід роботи та проєкти</h2>
+    <div class="mb-3">
+        <h5>Вебдодаток на Flask (Навчальний проєкт)</h5>
+        <p class="mb-0">Створення багатосторінкового сайту-портфоліо з використанням шаблонізатора Jinja2, наслідування шаблонів, статичних ресурсів та деплоєм на хмарну платформу Render.</p>
+    </div>
+</section>
+{% endblock %}
